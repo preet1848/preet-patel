@@ -1,0 +1,28 @@
+# 1. types loops in python 
+
+# for loop
+
+# for i in range(10):
+#     print("for loop :" , i)
+
+# for i in range(1 , 10):
+#     print(i)
+
+# for i in  range(1 , 10 , 3):
+#     print(i)
+
+# range (start , stop , step)
+
+# while loop
+
+
+# logic
+      # i+=1 [ i = 0 + 1 ] = 1
+      # i+=1 [ i = 1 + 1 ] = 2
+      # i+=1 [ i = 2 + 1 ] = 3
+      # i+=1 [ i = 3 + 1 ] = 4
+      # i+=1 [ i = 4 + 1 ] = 5
+i = 0 
+while i <= 10:
+  print("while loop:" , i)
+  i+=1
