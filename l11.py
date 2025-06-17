@@ -39,4 +39,92 @@ while True:
             for user in user:
                 print(user)
 
+    elif choice == "3":
+
+        try:
+
+            user_id = int(input("Enter update user id : "))
+
+            found = False 
+
+            for user in user:
+
+                if user["id"] == user_id:
+                 
+                    field = input("Enter your field to update (name/age):").lower()
+                 
+                    if field in user:
+                     
+                        if field == "age":
+                         
+                            user["age"] = int(input("Enter new age :"))
+
+                        else:
+                            user["name"] = input("Enter new name: ")
+
+                            print ("User update successfully!!")
+
+                else:
+
+                    print("Invalid field")
+
+                found = True
+
+                break
+        
+            if not found:
+
+                print("user not found!!") 
+
+        except:
+
+            print("invalid input!!!") 
+
+    elif choice == "4":          
+
+        try:
+
+            user_id = int(input("Enter ID to Delete User : "))
+
+            for user in user:
+
+                new_user = []
+
+                if user["id"] != user_id:
+
+                    new_user.append(user)
+
+                    users = new_user
+
+                    print("user delete successfully!!")
+
+        except:
+
+            print("invalid input!!!")    
+
+    elif choice == "5":
+
+        print("Program exit successfully!!")    
+
+
+    else:
+
+        print("Invalid choice, please Enter number of 1 to 5.")        
+
+
+
+    
+
+
+        
+        
+
+    
+
+
+
+
+
+                
+                     
 
