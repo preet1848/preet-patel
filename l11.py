@@ -47,7 +47,7 @@ while True:
 
             found = False 
 
-            for user in user:
+            for user in users:
 
                 if user["id"] == user_id:
                  
